@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="relative text-white pb-10 px-14 mt-12">
       <div className="flex flex-wrap sm:justify-between justify-center  items-center">
-      <p className="flex md:text-base text-sm font-light items-center gap-2">
+      <p className="flex md:text-base text-sm font-light gap-2">
         <FiCoffee className="size-5" />
         Tranformando café em código.
       </p>
