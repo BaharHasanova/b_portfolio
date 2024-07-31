@@ -23,6 +23,7 @@ export default function Contact() {
   ]
 
   return (
+    
     <div className="flex items-center gap-4 py-4">
       {socialMedias.map((socialMedia) => (
         <a href={socialMedia.link} target="_blank"
