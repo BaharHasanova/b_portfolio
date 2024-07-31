@@ -12,10 +12,10 @@ export default function Projects() {
       desc: "E-commerce inspirado na Apple. Possui um slider de produtos, detalhes dos produtos e carrinho de compras, com design próprio.",
       img: "/projects/iCommerce.jpg",
       techs: [
-        <RiNextjsLine />,
-        <DiReact className="text-[#61dafb]" />,
-        <SiTailwindcss className="text-[#38bdf8]" />,
-        <BiLogoTypescript className="text-[#3178c6]" />
+        { id: 1, icon: <RiNextjsLine /> },
+        { id: 2, icon: <DiReact className="text-[#61dafb]" /> },
+        { id: 3, icon: <SiTailwindcss className="text-[#38bdf8]" /> },
+        { id: 4, icon: <BiLogoTypescript className="text-[#3178c6]" /> }
       ],
       url: "https://github.com/hemilyb/apple-ecommerce"
     },
@@ -25,10 +25,10 @@ export default function Projects() {
       desc: "Painel administrativo criado com base na documentação oficial do Next.js, apresentando uma interface moderna e responsiva.",
       img: "/projects/acme.png",
       techs: [
-        <RiNextjsLine />,
-        <DiReact className="text-[#61dafb]" />,
-        <SiTailwindcss className="text-[#38bdf8]" />,
-        <BiLogoTypescript className="text-[#3178c6]" />
+        { id: 1, icon: <RiNextjsLine /> },
+        { id: 2, icon: <DiReact className="text-[#61dafb]" /> },
+        { id: 3, icon: <SiTailwindcss className="text-[#38bdf8]" /> },
+        { id: 4, icon: <BiLogoTypescript className="text-[#3178c6]" /> }
       ],
       url: "https://github.com/hemilyb/nextjs-dashboard"
     },
@@ -38,9 +38,9 @@ export default function Projects() {
       desc: "Planejador de viagem para definir destino e datas, convidar amigos, adicionar atividades diárias e salvar links importantes.",
       img: "/projects/planner.png",
       techs: [
-        <DiReact className="text-[#61dafb]" />,
-        <SiTailwindcss className="text-[#38bdf8]" />,
-        <BiLogoTypescript className="text-[#3178c6]" />
+        { id: 1, icon: <DiReact className="text-[#61dafb]" /> },
+        { id: 2, icon: <SiTailwindcss className="text-[#38bdf8]" /> },
+        { id: 3, icon: <BiLogoTypescript className="text-[#3178c6]" /> }
       ],
       url: "https://github.com/hemilyb/plann.er"
     },
@@ -50,9 +50,9 @@ export default function Projects() {
       desc: "Essa aplicação permite visualizar o clima atual para o local digitado, incluindo informações como velocidade do vento e umidade.",
       img: "/projects/weather.jpg",
       techs: [
-        <DiJsBadge className="text-[#f0db4f]" />,
-        <DiHtml5 className="text-[#e44d26]" />,
-        <DiCss3 className="text-[#1572b6]" />
+        { id: 1, icon: <DiJsBadge className="text-[#f0db4f]" /> },
+        { id: 2, icon: <DiHtml5 className="text-[#e44d26]" /> },
+        { id: 3, icon: <DiCss3 className="text-[#1572b6]" /> }
       ],
       url: "https://github.com/hemilyb/Weather"
     },
@@ -62,9 +62,9 @@ export default function Projects() {
       desc: "Adicione produtos, defina categorias e monitore itens em falta ou recém-adicionados, facilitando a organização e o controle do inventário.",
       img: "/projects/gestor-estoque.png",
       techs: [
-        <DiReact className="text-[#61dafb]" />,
-        <SiReactrouter className="text-[#f44250]" />,
-        <DiCss3 className="text-[#1572b6]" />
+        { id: 1, icon: <DiReact className="text-[#61dafb]" /> },
+        { id: 2, icon: <SiReactrouter className="text-[#f44250]" /> },
+        { id: 3, icon: <DiCss3 className="text-[#1572b6]" /> }
       ],
       url: "https://github.com/hemilyb/gestao-de-estoque"
     },
@@ -74,9 +74,9 @@ export default function Projects() {
       desc: "Quiz de JavaScript focado em eventos e formulários, projetado para reforçar e praticar alguns conceitos da linguagem de forma interativa.",
       img: "/projects/quizz.png",
       techs: [
-        <DiJsBadge className="text-[#f0db4f]" />,
-        <DiHtml5 className="text-[#e44d26]" />,
-        <DiCss3 className="text-[#1572b6]" />
+        { id: 1, icon: <DiJsBadge className="text-[#f0db4f]" /> },
+        { id: 2, icon: <DiHtml5 className="text-[#e44d26]" /> },
+        { id: 3, icon: <DiCss3 className="text-[#1572b6]" /> }
       ],
       url: "https://github.com/hemilyb/quizz"
     }
@@ -97,7 +97,7 @@ export default function Projects() {
           <div key={project.id}
             className="flex flex-col justify-center sm:w-[570px] w-[80vw]">
             <img src={project.img} alt={project.title}
-              className="rounded-3xl hover:translate-x-4 duration-200 hover:border border-white/[0.2]"/>
+              className="rounded-3xl hover:translate-x-4 duration-200 hover:border border-white/[0.2]" />
             <h3 className="font-bold lg:text-xl md:text-xl text-base mt-4">
               {project.title}
             </h3>
@@ -105,24 +105,24 @@ export default function Projects() {
               {project.desc}
             </p>
 
-            
+
             <div className="flex items-center justify-between mt-4 mb-3">
               <div className="flex items-center">
-                {project.techs.map((icon, index) => (
-                  <div key={index}
+                {project.techs.map((tech, index) => (
+                  <div key={tech.id}
                     className="border border-white/[0.2] rounded-full bg-black flex justify-center items-center lg:size-10 size-8"
-                  style={{ transform: `translateX(-${5 * index * 2}px)` }}
+                    style={{ transform: `translateX(-${5 * index * 2}px)` }}
                   >
-                    <span className="*:size-5">{icon}</span>
+                    <span className="*:size-5">{tech.icon}</span>
                   </div>
                 ))}
               </div>
 
               <a href={project.url}
-              target="_blank">
+                target="_blank">
                 <div className="border flex items-center px-4 py-2 rounded-md text-purple hover:text-white gap-2">
                   <p className="flex lg:text-base md:text-xs text-sm">Ver repositório</p>
-                  <DiGithubBadge className="size-5"/>
+                  <DiGithubBadge className="size-5" />
                 </div>
               </a>
             </div>
