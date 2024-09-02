@@ -54,7 +54,7 @@ export default function Projects() {
         { id: 2, icon: <DiHtml5 className="text-[#e44d26]" /> },
         { id: 3, icon: <DiCss3 className="text-[#1572b6]" /> }
       ],
-      url: "https://github.com/hemilyb/Weather"
+      url: "https://github.com/hemilyb/weather-js"
     },
     {
       id: 5,

@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="flex flex-wrap sm:justify-between justify-center  items-center">
       <p className="flex md:text-base text-sm font-light gap-2">
         <FiCoffee className="size-5" />
-        Tranformando café em código.
+        Transformando café em código.
       </p>
 
       <Contact />
