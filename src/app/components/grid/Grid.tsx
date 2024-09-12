@@ -9,9 +9,7 @@ export default function Grid() {
           <h2 className="text-purple items-center">Quem sou eu?</h2>
         </div>
         <div className="space-y-4 min-h-60">
-          <p>Curso Análise e Desenvolvimento de Sistemas e meu objetivo é me tornar uma desenvolvedora front-end de alta qualidade. Estou sempre em busca de novas formas de melhorar minhas habilidades e valorizo o aprendizado contínuo.</p>
-          <p>
-            Sou curiosa e gosto de resolver problemas. Acredito que a tecnologia tem o poder de transformar o mundo e estou animada para fazer parte dessa transformação! :)</p>
+          <p>Curso Análise e Desenvolvimento de Sistemas e meu objetivo é atuar como desenvolvedora front-end, criando aplicações que resolvam problemas do mundo real com código limpo e organizado. Estou sempre em busca de novas formas de melhorar minhas habilidades e valorizo o aprendizado contínuo.</p>
         </div>
       </div>
 
