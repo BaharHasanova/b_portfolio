@@ -46,15 +46,14 @@ export default function Projects() {
     },
     {
       id: 4,
-      title: "Weather",
-      desc: "Essa aplicação permite visualizar o clima atual para o local digitado, incluindo informações como velocidade do vento e umidade.",
-      img: "/projects/weather.jpg",
+      title: "Moodify",
+      desc: "Moodify é um aplicativo desenvolvido em React Native, utilizando o Expo Router, que permite aos usuários registrar suas notas de humor.",
+      img: "/projects/moodify.jpg",
       techs: [
-        { id: 1, icon: <DiJsBadge className="text-[#f0db4f]" /> },
-        { id: 2, icon: <DiHtml5 className="text-[#e44d26]" /> },
-        { id: 3, icon: <DiCss3 className="text-[#1572b6]" /> }
+        { id: 1, icon: <DiReact className="text-[#61dafb]" /> },
+        { id: 3, icon: <BiLogoTypescript className="text-[#3178c6]" /> }
       ],
-      url: "https://github.com/hemilyb/weather-js"
+      url: "https://github.com/hemilyb/moodify"
     },
     {
       id: 5,
@@ -70,15 +69,14 @@ export default function Projects() {
     },
     {
       id: 6,
-      title: "Quizz JavaScript",
-      desc: "Quiz de JavaScript focado em eventos e formulários, projetado para reforçar e praticar alguns conceitos da linguagem de forma interativa.",
-      img: "/projects/quizz.png",
+      title: "EchoBeat",
+      desc: "Review do produto EchoBeat desenvolvido em React, os usuários podem avaliar com estrelas e deixar comentários.",
+      img: "/projects/echobeat.jpg",
       techs: [
-        { id: 1, icon: <DiJsBadge className="text-[#f0db4f]" /> },
-        { id: 2, icon: <DiHtml5 className="text-[#e44d26]" /> },
-        { id: 3, icon: <DiCss3 className="text-[#1572b6]" /> }
+        { id: 1, icon: <DiReact className="text-[#61dafb]" /> },
+        { id: 2, icon: <SiTailwindcss className="text-[#38bdf8]" /> }
       ],
-      url: "https://github.com/hemilyb/quizz"
+      url: "https://github.com/hemilyb/review-de-produto"
     }
   ]
 

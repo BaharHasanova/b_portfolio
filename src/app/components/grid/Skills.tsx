@@ -2,6 +2,7 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { DiCss3, DiGithubBadge, DiHtml5, DiJsBadge, DiReact, DiSass } from "react-icons/di";
 import { RiNextjsLine } from "react-icons/ri";
 import { SiFigma, SiTailwindcss } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 
 export const skills = [
   {
@@ -17,6 +18,13 @@ export const skills = [
     icon: <RiNextjsLine />,
     color: "text-white",
     hover: "hover:text-gray-200"
+  },
+  {
+    id: "react-native",
+    name: "React Native",
+    icon: <DiReact />,
+    color: "text-[#61dafb]",
+    hover: "hover:text-[#00C8FF]"
   },
   {
     id: "javascript",
