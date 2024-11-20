@@ -9,7 +9,7 @@ export default function Projects() {
     {
       id: 1,
       title: "iCommerce",
-      desc: "E-commerce inspirado na Apple. Possui um slider de produtos, detalhes dos produtos e carrinho de compras, com design próprio.",
+      desc: "E-commerce inspirado na Apple, para facilitar a experiência de compra online. Possui um slider de produtos, detalhes dos produtos e carrinho de compras.",
       img: "/projects/iCommerce.jpg",
       techs: [
         { id: 1, icon: <RiNextjsLine /> },
@@ -22,7 +22,7 @@ export default function Projects() {
     {
       id: 2,
       title: "Acme Dashboard",
-      desc: "Painel administrativo criado com base na documentação oficial do Next.js, apresentando uma interface moderna e responsiva.",
+      desc: "Painel administrativo que centraliza informações, permitindo que gestores monitorem dados em tempo real. Criado com Next.js, apresenta uma interface moderna e responsiva.",
       img: "/projects/acme.png",
       techs: [
         { id: 1, icon: <RiNextjsLine /> },
@@ -35,7 +35,7 @@ export default function Projects() {
     {
       id: 3,
       title: "Plann.er",
-      desc: "Planejador de viagem para definir destino e datas, convidar amigos, adicionar atividades diárias e salvar links importantes.",
+      desc: "Planejador de viagem que ajuda os usuários a organizar destinos, convidar amigos, adicionar atividades diárias e salvar links importantes.",
       img: "/projects/planner.png",
       techs: [
         { id: 1, icon: <DiReact className="text-[#61dafb]" /> },
@@ -47,7 +47,7 @@ export default function Projects() {
     {
       id: 4,
       title: "Moodify",
-      desc: "Moodify é um aplicativo desenvolvido em React Native, utilizando o Expo Router, que permite aos usuários registrar suas notas de humor.",
+      desc: "Um app para monitorar o bem-estar emocional, permite que os usuários registrem suas notas de humor e identifiquem padrões para cuidar melhor da saúde mental.",
       img: "/projects/moodify.jpg",
       techs: [
         { id: 1, icon: <DiReact className="text-[#61dafb]" /> },
@@ -58,7 +58,7 @@ export default function Projects() {
     {
       id: 5,
       title: "Gestor de Estoque",
-      desc: "Adicione produtos, defina categorias e monitore itens em falta ou recém-adicionados, facilitando a organização e o controle do inventário.",
+      desc: "Permite adicionar produtos, organizar categorias e acompanhar itens em falta, tornando o controle de estoque mais fácil e eficiente.",
       img: "/projects/gestor-estoque.png",
       techs: [
         { id: 1, icon: <DiReact className="text-[#61dafb]" /> },
@@ -70,7 +70,7 @@ export default function Projects() {
     {
       id: 6,
       title: "EchoBeat",
-      desc: "Review do produto EchoBeat desenvolvido em React, os usuários podem avaliar com estrelas e deixar comentários.",
+      desc: "Desenvolvido em React, os usuários podem dar notas ao produto com estrelas e deixar comentários, ajudando marcas a coletar feedback e melhorar a experiência dos clientes.",
       img: "/projects/echobeat.jpg",
       techs: [
         { id: 1, icon: <DiReact className="text-[#61dafb]" /> },
