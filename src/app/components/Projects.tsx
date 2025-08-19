@@ -1,5 +1,5 @@
 import { BiLogoTypescript } from "react-icons/bi"
-import { DiCss3, DiGithubBadge, DiHtml5, DiJavascript, DiJsBadge, DiReact } from "react-icons/di"
+import { DiCss3, DiGithubBadge, DiHtml5, DiJavascript, DiJsBadge, DiPython, DiReact } from "react-icons/di"
 import { RiNextjsLine } from "react-icons/ri"
 import { SiReactrouter, SiTailwindcss } from "react-icons/si"
 
@@ -8,85 +8,81 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "iCommerce",
-      desc: "E-commerce inspirado na Apple, para facilitar a experiência de compra online. Possui um slider de produtos, detalhes dos produtos e carrinho de compras.",
-      img: "/projects/iCommerce.jpg",
+      title: "Chill 404 Page",
+      desc: "A simple 404 page that can be used in any project",
+      img: "/projects/404.png",
       techs: [
         { id: 1, icon: <RiNextjsLine /> },
-        { id: 2, icon: <DiReact className="text-[#61dafb]" /> },
-        { id: 3, icon: <SiTailwindcss className="text-[#38bdf8]" /> },
-        { id: 4, icon: <BiLogoTypescript className="text-[#3178c6]" /> }
-      ],
-      url: "https://github.com/hemilyb/apple-ecommerce"
-    },
-    {
-      id: 2,
-      title: "Acme Dashboard",
-      desc: "Painel administrativo que centraliza informações, permitindo que gestores monitorem dados em tempo real. Criado com Next.js, apresenta uma interface moderna e responsiva.",
-      img: "/projects/acme.png",
-      techs: [
-        { id: 1, icon: <RiNextjsLine /> },
-        { id: 2, icon: <DiReact className="text-[#61dafb]" /> },
-        { id: 3, icon: <SiTailwindcss className="text-[#38bdf8]" /> },
-        { id: 4, icon: <BiLogoTypescript className="text-[#3178c6]" /> }
-      ],
-      url: "https://github.com/hemilyb/nextjs-dashboard"
-    },
-    {
-      id: 3,
-      title: "Plann.er",
-      desc: "Planejador de viagem que ajuda os usuários a organizar destinos, convidar amigos, adicionar atividades diárias e salvar links importantes.",
-      img: "/projects/planner.png",
-      techs: [
-        { id: 1, icon: <DiReact className="text-[#61dafb]" /> },
         { id: 2, icon: <SiTailwindcss className="text-[#38bdf8]" /> },
         { id: 3, icon: <BiLogoTypescript className="text-[#3178c6]" /> }
       ],
-      url: "https://github.com/hemilyb/plann.er"
+      url: "https://github.com/BaharHasanova/404-page"
     },
     {
-      id: 4,
-      title: "Moodify",
-      desc: "Um app para monitorar o bem-estar emocional, permite que os usuários registrem suas notas de humor e identifiquem padrões para cuidar melhor da saúde mental.",
-      img: "/projects/moodify.jpg",
+      id: 2,
+      title: "Gif Generator",
+      desc: "GIF generator that allows users to create custom GIFs from images",
+      img: "/projects/gif.png",
       techs: [
-        { id: 1, icon: <DiReact className="text-[#61dafb]" /> },
+        { id: 1, icon: <DiPython className="text-[#3776AB]" /> }
+      ],
+      url: "https://github.com/BaharHasanova/gif-generator"
+    },
+    {
+      id: 3,
+      title: "autoIntro",
+      desc: "AutoIntro app that lets users share their preferences, habits, and tastes through a structured profile, generating a unique link for others to explore and instantly discover information",
+      img: "/projects/autoIntro.png",
+      techs: [
+        { id: 1, icon: <RiNextjsLine /> },
+        { id: 2, icon: <SiTailwindcss className="text-[#38bdf8]" /> },
         { id: 3, icon: <BiLogoTypescript className="text-[#3178c6]" /> }
       ],
-      url: "https://github.com/hemilyb/moodify"
-    },
-    {
-      id: 5,
-      title: "Gestor de Estoque",
-      desc: "Permite adicionar produtos, organizar categorias e acompanhar itens em falta, tornando o controle de estoque mais fácil e eficiente.",
-      img: "/projects/gestor-estoque.png",
-      techs: [
-        { id: 1, icon: <DiReact className="text-[#61dafb]" /> },
-        { id: 2, icon: <SiReactrouter className="text-[#f44250]" /> },
-        { id: 3, icon: <DiCss3 className="text-[#1572b6]" /> }
-      ],
-      url: "https://github.com/hemilyb/gestao-de-estoque"
-    },
-    {
-      id: 6,
-      title: "EchoBeat",
-      desc: "Desenvolvido em React, os usuários podem dar notas ao produto com estrelas e deixar comentários, ajudando marcas a coletar feedback e melhorar a experiência dos clientes.",
-      img: "/projects/echobeat.jpg",
-      techs: [
-        { id: 1, icon: <DiReact className="text-[#61dafb]" /> },
-        { id: 2, icon: <SiTailwindcss className="text-[#38bdf8]" /> }
-      ],
-      url: "https://github.com/hemilyb/review-de-produto"
+      url: "https://github.com/BaharHasanova/autoIntro"
     }
+    // {
+    //   id: 4,
+    //   title: "Moodify",
+    //   desc: "Um app para monitorar o bem-estar emocional, permite que os usuários registrem suas notas de humor e identifiquem padrões para cuidar melhor da saúde mental.",
+    //   img: "/projects/moodify.jpg",
+    //   techs: [
+    //     { id: 1, icon: <DiReact className="text-[#61dafb]" /> },
+    //     { id: 3, icon: <BiLogoTypescript className="text-[#3178c6]" /> }
+    //   ],
+    //   url: "https://github.com/hemilyb/moodify"
+    // },
+    // {
+    //   id: 5,
+    //   title: "Gestor de Estoque",
+    //   desc: "Permite adicionar produtos, organizar categorias e acompanhar itens em falta, tornando o controle de estoque mais fácil e eficiente.",
+    //   img: "/projects/gestor-estoque.png",
+    //   techs: [
+    //     { id: 1, icon: <DiReact className="text-[#61dafb]" /> },
+    //     { id: 2, icon: <SiReactrouter className="text-[#f44250]" /> },
+    //     { id: 3, icon: <DiCss3 className="text-[#1572b6]" /> }
+    //   ],
+    //   url: "https://github.com/hemilyb/gestao-de-estoque"
+    // },
+    // {
+    //   id: 6,
+    //   title: "EchoBeat",
+    //   desc: "Desenvolvido em React, os usuários podem dar notas ao produto com estrelas e deixar comentários, ajudando marcas a coletar feedback e melhorar a experiência dos clientes.",
+    //   img: "/projects/echobeat.jpg",
+    //   techs: [
+    //     { id: 1, icon: <DiReact className="text-[#61dafb]" /> },
+    //     { id: 2, icon: <SiTailwindcss className="text-[#38bdf8]" /> }
+    //   ],
+    //   url: "https://github.com/hemilyb/review-de-produto"
+    // }
   ]
 
 
   return (
-    <div className="relative text-white">
+    <div id="projects" className="relative text-black dark:text-white">
       <div className="flex justify-center items-center px-4 text-2xl font-bold py-8">
         <h2 className="">
-          Alguns dos meus
-          <span className="text-purple"> projetos</span>
+          Some of my
+          <span className="text-purple"> projects</span>
         </h2>
       </div>
 
@@ -119,7 +115,7 @@ export default function Projects() {
               <a href={project.url}
                 target="_blank">
                 <div className="border flex items-center px-4 py-2 rounded-md text-purple hover:text-white gap-2">
-                  <p className="flex lg:text-base md:text-xs text-sm">Ver repositório</p>
+                  <p className="flex lg:text-base md:text-xs text-sm">View repository</p>
                   <DiGithubBadge className="size-5" />
                 </div>
               </a>

@@ -38,8 +38,7 @@ export const TextEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className={`${idx > 3 ? "text-purple" : "dark:text-white text-white"
-                } opacity-0`}
+              className={`${idx > 3 ? "text-purple dark:text-purple" : "text-black dark:text-white "} opacity-0`}
             >
               {word}{" "}
             </motion.span>
@@ -62,7 +61,7 @@ export const TextEffect = ({
               transition={{ duration: 1 }}
               className="font-normal uppercase text-sm text-purple"
             >
-              Desenvolvedora front-end
+              Software Engineer
             </motion.p>
           )}
           </div>
