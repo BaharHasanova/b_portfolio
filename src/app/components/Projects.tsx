@@ -2,6 +2,7 @@ import { BiLogoTypescript } from "react-icons/bi"
 import { DiCss3, DiGithubBadge, DiHtml5, DiJavascript, DiJsBadge, DiPython, DiReact } from "react-icons/di"
 import { RiNextjsLine } from "react-icons/ri"
 import { SiReactrouter, SiTailwindcss } from "react-icons/si"
+import Image from 'next/image'
 
 export default function Projects() {
 
@@ -90,8 +91,14 @@ export default function Projects() {
         {projects.map((project) => (
           <div key={project.id}
             className="flex flex-col justify-center sm:w-[570px] w-[80vw]">
-            <img src={project.img} alt={project.title}
-              className="rounded-3xl hover:translate-x-4 duration-200 hover:border border-white/[0.2]" />
+            <Image 
+              src={project.img}
+              alt={project.title}
+              width={500}  // Set appropriate width
+              height={300} // Set appropriate height
+              loading="lazy"
+              className="rounded-lg"
+            />
             <h3 className="font-bold lg:text-xl md:text-xl text-base mt-4">
               {project.title}
             </h3>

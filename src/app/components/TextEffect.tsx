@@ -26,10 +26,8 @@ export const TextEffect = ({
         duration: 2,
         delay: stagger(0.2),
       }
-    ).then(() => {
-      setAnimationComplete(true);
-    });
-  }, [scope.current]);
+    ).then(() => setAnimationComplete(true));
+  }, []); // Remove scope.current from dependencies
 
   const renderWords = () => {
     return (
